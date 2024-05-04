@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic-Tac-Toe-Jumanji</title>
+</head>
+
+<body>
+    <main>
+        <section class="section section-game">
+            <div class="container">
+                <h1 class="heading">Welcome To Jumanji</h1>
+                <table align="center" cellspacing="20" cellpadding="0">
+                    <tr class="row">
+                        <th class="column-subHeading">Note :</th>
+                    </tr>
+                    <tr class="row">
+                        <td class="column">Only Two Players are Play This Game.</td>
+                    </tr>
+                    <tr class="row">
+                        <td class="column">Two Players Must Required</td>
+                    </tr>
+                </table>
+                <p id="win" class="winner"></p>
+            </div>
+
+            
+            <div class="container grid grid-three-column">
+                <div>
+                    <input type="button" id="btn1" readonly onclick=" b1(); win()">
+                </div>
+
+
+                <div>
+                    <input type="button" id="btn2" readonly onclick=" b2(); win()">
+                </div>
+ 
+
+                <div>
+                    <input type="button" id="btn3" readonly onclick=" b3(); win()">
+                </div>
+ 
+
+                <div>
+                    <input type="button" id="btn4" readonly onclick=" b4(); win()">
+                </div>
+ 
+
+                <div>
+                    <input type="button" id="btn5" readonly onclick=" b5(); win()">
+                </div>
+ 
+
+                <div>
+                    <input type="button" id="btn6" readonly onclick=" b6(); win()">
+                </div>
+ 
+
+                <div>
+                    <input type="button" id="btn7" readonly onclick=" b7(); win()">
+                </div>
+ 
+
+                <div>
+                    <input type="button" id="btn8" readonly onclick=" b8(); win()">
+                </div>
+                
+                
+                <div>
+                    <input type="button" id="btn9" readonly onclick=" b9(); win()">
+                </div>
+
+            </div>
+
+            <div class="container">
+                <input type="reset" value="Reset" id="reset" onclick="reset();">
+                <p id="player" class="h5">Player - 1</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>

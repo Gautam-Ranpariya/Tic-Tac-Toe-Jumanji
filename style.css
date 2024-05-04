@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    /* overflow: hidden; */
+}
+:root{
+    --bg-color:#101820ff;
+    --color:#fee715ff;
+    --helper-color:#fff;
+    --helper-tint:#fcf6f5ff;
+    --td-color:#f8ecd3 ;
+    --hover-bg-color:#000;
+}
+
+body{
+    background-color: var(--bg-color);
+    height: 100vh;
+}
+.section{
+    width: 100vw;
+    height: 100vh;
+    padding: 10rem 0;
+}
+.section-game {
+    background-color:var(--bg-color);
+}
+
+.container {
+    max-width: 60rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+}
+
+.heading{
+    text-align: center;
+    font-size: 5rem;
+    color: var(--color);
+    margin-bottom: 3.2rem;
+}
+.h5{
+    display: inline;
+    font-size: 2rem;
+    color: var(--helper-color);
+    text-align: center;
+}
+.column-subHeading{
+    font-size: 3rem;
+    color: var(--helper-tint);
+    border: 2px solid white;
+}
+.column,.winner{
+    font-size: 2rem;
+    color: var(--td-color);
+    text-align: center;
+}
+.winner{
+    line-height: 3rem;
+    font-size: 2.5rem;
+    color: var(--color);
+}
+
+.grid{
+    display: grid;
+    gap: 1rem;
+}
+.grid-three-column{
+    grid-template-columns: repeat(3 , 1fr);
+}
+
+input[type="button"]{
+    width: 100%;
+    height: 10rem;
+    text-align: center;
+    background-color: var(--helper-tint);
+    background-image: var(--linear-bg);
+    border: 3px solid var(--color);
+    font-size: 3.5rem;
+    font-weight: bold;
+    font-family: "Google sans";
+    color: var(--hover-bg-color);
+}
+
+input[type="reset"]{
+    height: 4rem;
+    font-size: 2rem;
+    text-align: center;
+    margin: 2rem 0;
+    background-color: var(--td-color);
+}
+
+input[type="button"]:hover{
+    color: var(--hover-bg-color);
+    background-color: var(--color);
+    border: 3px solid var(--hover-bg-color);
+    box-shadow: 3px 3px 5px var(--helper-color);
+}
+
+
+input[type="reset"]:hover{
+    color: var(--hover-bg-color);
+    font-weight: 600;
+    border: 3px solid var(--color);
+    background-color: var(--helper-color);
+}
+
+/* --------------------------
+    media 1100px
+----------------- */
+@media screen and (max-width:1100px) {
+    html{
+        font-size: 53%;
+    }
+}
+
+
+/* --------------------------
+    media 600px
+----------------- */
+@media screen and (max-width:600px) {
+    html{
+        font-size: 48%;
+    }
+}
+
+
+/* --------------------------
+    media 500px
+----------------- */
+@media screen and (max-width:500px) {
+    html{
+        font-size: 45%;
+    }
+    
+    .grid{
+        gap: 1.5rem;
+    }
+    .container{
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .h5{
+        font-size: 2.7rem;
+    }
+    .column-subHeading{
+        font-size: 3.2rem;
+    }
+    .column{
+        font-size:2.5rem ;
+    }
+    input[type="reset"]{
+        font-size: 2.5rem;
+    }
+    .winner{
+        font-size: 2.9rem;
+        margin-bottom: 2rem;
+    }
+}
+
+
+
+/* --------------------------
+    media 400px
+----------------- */
+@media screen and (max-width:400px) {
+    html{
+        font-size: 40%;
+    }
+
+    .grid{
+        gap: 1.2rem;
+    }
+
+    .container{
+        max-width: 350px;
+        margin: 0 auto;
+    }
+}
+
+
+
+/* --------------------------
+    media 300px
+----------------- */
+@media screen and (max-width:300px) {
+    
+}
