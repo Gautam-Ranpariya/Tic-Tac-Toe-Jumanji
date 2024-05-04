@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 html {
     font-size: 62.5%;
@@ -20,7 +21,6 @@ body{
     background-color: var(--bg-color);
     height: 100vh;
     width: 100vw;
-    overflow-x: hidden;
 }
 .section{
     width: 100vw;
