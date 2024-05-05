@@ -41,6 +41,7 @@ body{
     padding: 0 2rem;
 }
 
+
 .heading{
     text-align: center;
     font-size: 5rem;
@@ -91,10 +92,11 @@ input[type="button"]{
 }
 
 input[type="reset"]{
-    height: 4rem;
     font-size: 2rem;
     text-align: center;
     margin: 2rem 0;
+    padding: 1rem;
+    width: 100%;
     background-color: var(--td-color);
 }
 
