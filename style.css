@@ -24,7 +24,7 @@ body{
 .section{
     width: 100vw;
     height: 100vh;
-    padding: 10rem 0;
+    padding: 5rem 0;
 }
 .section-game {
     background-color:var(--bg-color);
